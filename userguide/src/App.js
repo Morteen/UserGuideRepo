@@ -3,6 +3,9 @@ import './App.css';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import locusLogo from '../src/Images/LocusLogo.png'
 import HomeScreen from './Screens/HomeScreen'
+import DownloadApp from './Screens/DownloadApp'
+import CustomerCode from './Screens/CustomerCode'
+import LoginGuide from './Screens/LoginGuide'
 
 function App() {
 
@@ -23,19 +26,29 @@ function App() {
           <br></br>
           <button onClick={openMenu}>&#9776;</button>
 
-         Transfleet Terminal
+        <Link to='/'>Transfleet Terminal</Link> 
         </div>
         <div className="header-links"></div>
       </header>
       <aside className="sidebar">
-       <h3>Test av sidebar</h3>
-       <Link onClick={closeMenu}> Last ned appen</Link>
+        <ul>
+          <li>
+       <Link to='/DownloadApp' onClick={closeMenu}> Last ned appen</Link>
+       </li>
+       <li><Link to='/CustomerCode' onClick={closeMenu}> Kundekode</Link>
+       </li>
+       <li>
+       <Link to='/LoginGuide' onClick={closeMenu}>Login guide</Link>
+       </li>
+       </ul>
       </aside>
 
       <main className="main">
         <div className="content">
         <Route path="/" exact={true} component={HomeScreen} />
-        
+        <Route path='/DownloadApp' component={DownloadApp}></Route>
+        <Route path ='/CustomerCode'component ={CustomerCode}/>
+        <Route path ='/LoginGuide' component = {LoginGuide}/>       
         </div>
       </main>
 

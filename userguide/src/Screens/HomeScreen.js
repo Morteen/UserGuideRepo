@@ -19,7 +19,7 @@ function HomeScreen(props) {
             
 
               <div className="product-name">
-                <Link>PPPP ned fra Google Play</Link>
+                <Link to='/DownloadApp' >Last ned fra Google Play</Link>
               </div>
               <div className="product-brand">mm</div>
               <div className="product-price">mm</div>
@@ -30,7 +30,7 @@ function HomeScreen(props) {
             </li>
             <li>
             <div className="product-name">
-                <Link >Kundekode</Link>
+                <Link to='/CustomerCode'>Kundekode</Link>
               </div>
               <div className="product-brand">mm</div>
               <div className="product-price">mm</div>
@@ -40,7 +40,7 @@ function HomeScreen(props) {
             </li>
             <li>
             <div className="product-name">
-                <Link >Login</Link>
+                <Link to='/LoginGuide' >Login Guide</Link>
               </div>
               <div className="product-brand">mm</div>
               <div className="product-price">mm</div>
