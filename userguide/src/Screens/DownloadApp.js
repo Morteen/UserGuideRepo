@@ -8,6 +8,7 @@ import InstallApp from '../Images/downlaodApp/InstallApp.PNG'
 import OpenApp from '../Images/downlaodApp/OpenApp.PNG'
 import AllowAccessOninstall from '../Images/downlaodApp/AllowAccessOninstall.PNG'
 import AllowAccessToGoogleEmail from '../Images/downlaodApp/AllowAccessToGoogleEmail.PNG'
+import CustomerCodeScreen from '../Images/downlaodApp/CustomerCode.PNG'
 
 
 function DownloadApp(props) {
@@ -44,11 +45,18 @@ function DownloadApp(props) {
       </li>
       <li className="product">
       Det er viktig å tillate alle valg
+      <div> &nbsp; </div>
       <img src={AllowAccessOninstall} alt=" Google Play Icon"  className="product-image"/>
       </li>
       <li className="product">
      Tillat å bruke email adressen, den blir da registert i Transfleet og kan brukes ved support
       <img src={AllowAccessToGoogleEmail} alt=" Google Play Icon"  className="product-image"/>
+      </li>
+      <li className="product">
+      <Link to='/CustomerCode'>Hvordan legge inn kundekode finner du her!
+      <div> &nbsp; </div>
+      <img src={CustomerCodeScreen} alt=" Google Play Icon"  className="product-image"/>
+      </Link>
       </li>
       
         </ul>
