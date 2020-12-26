@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import locusLogo from '../src/Images/LocusLogo.png'
+import LocusLogo from './Images/LocusLogo.png'
 import HomeScreen from './Screens/HomeScreen'
 import DownloadApp from './Screens/DownloadApp'
 import CustomerCode from './Screens/CustomerCode'
@@ -22,7 +22,7 @@ function App() {
 
 <header className="header">
         <div className="brand">
-        <img className="locusLogo" src={require("./LocusLogo.png")}></img>
+        <img className="locusLogo" src={LocusLogo} alt='Locus Logo'></img>
           <br></br>
           <button onClick={openMenu}>&#9776;</button>
 
