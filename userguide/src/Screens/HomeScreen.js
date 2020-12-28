@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 import GooglePlaySearch from '../Images/downlaodApp/GooglePlaySearch.PNG'
 import CustomerCodeScreen from '../Images/downlaodApp/CustomerCode.PNG'
 import CustomerCodeScreenWithCode from "../Images/BrdDahl/CustomerCodeScreenWithCode.PNG";
+import LogOn from '../Images/BrdDahl/LogOn/LogOn.PNG'
+import Menu from '../Images/BrdDahl/Menu/Menu.PNG'
 
 
 function HomeScreen(props) {
@@ -39,7 +41,7 @@ function HomeScreen(props) {
             <div className="product-name"  onClick={closeMenu}>
                 <Link to='/CustomerCode'><div> Kundekode </div>
                 <div> &nbsp; </div>
-                <img src={CustomerCodeScreen} alt=" Google Play Icon"  className="product-image"/>
+                <img src={CustomerCodeScreen} alt="Google Play Icon"  className="product-image"/>
                 </Link>
              
               
@@ -48,8 +50,21 @@ function HomeScreen(props) {
             </li>
             <li>
             <div className="product-name"    onClick={closeMenu}>
-                <Link to='/LoginGuide' >Login Guide
-                <img src={CustomerCodeScreenWithCode} alt=" Google Play Icon"  className="product-image"/>
+                <Link to='/LoginGuide' ><div>Login Guide</div>
+                <div> &nbsp; </div>
+                <img src={LogOn} alt=" Google Play Icon"  className="product-image"/>
+                </Link>
+         
+             
+              
+              </div>
+
+            </li>
+            <li>
+            <div className="product-name"    onClick={closeMenu}>
+                <Link to='/MenuGuide' ><div>Meny </div>
+                <div> &nbsp; </div>
+                <img src={Menu} alt=" Google Play Icon"  className="product-image"/>
                 </Link>
          
              

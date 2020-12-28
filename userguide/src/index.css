@@ -69,6 +69,7 @@ button {
 }
 a {
   text-decoration: none;
+  color: #4682b4;
 }
 a:hover {
   color: #ff8000;
@@ -126,6 +127,10 @@ ul.review {
 .review li > div {
   margin: 0.5rem;
 }
+#startIconTFTerminal {
+  max-width: 11rem;
+  max-height: 9rem;
+}
 
 /* Rating */
 .rating span {
@@ -153,6 +158,7 @@ a > .rating > span:last-child {
 }
 .sidebar h3 {
   padding-left: 2rem;
+  color: #ffffff;
 }
 .sidebar {
   position: fixed;
@@ -179,7 +185,19 @@ a > .rating > span:last-child {
   right: 0.5rem;
   top: 1.5rem;
 }
-
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+}
+.sidebar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+}
+.sidebar-links a:hover {
+  color: #ff8000;
+}
 /* Product Details */
 .details {
   display: flex;
@@ -487,37 +505,7 @@ tbody > tr:nth-child(odd) {
   top: 50%;
   left: 50%;
 }
-.running {
-  color: #4682b4;
-}
-.stopped {
-  color: red;
-  font-weight: bold;
-}
-.starting {
-  color: #f0c040;
-  font-weight: bolder;
-}
 
-.TMSBox {
-  display: flex;
-
-  flex-wrap: wrap;
-}
-.TMSName {
-  flex: 1 1 auto;
-  align-items: center;
-  text-align: center;
-  font: 3rem Helvetica;
-  margin-bottom: 2rem;
-}
-.CompName {
-  font: 6rem Helvetica;
-}
-.TMSCat {
-  flex: 1 1 auto;
-  text-align: center;
-}
 .OverViewCompName {
   font: 4rem Helvetica;
 }

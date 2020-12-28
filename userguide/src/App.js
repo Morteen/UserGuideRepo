@@ -6,6 +6,7 @@ import HomeScreen from './Screens/HomeScreen'
 import DownloadApp from './Screens/DownloadApp'
 import CustomerCode from './Screens/CustomerCode'
 import LoginGuide from './Screens/LoginGuide'
+import MenuGuide from './Screens/MenuGuide'
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
        <li>
        <Link to='/LoginGuide' onClick={closeMenu}>Login guide</Link>
        </li>
+       <li>
+       <Link to='/MenuGuide' onClick={closeMenu}>Meny forklaring</Link>
+       </li>
        </ul>
       </aside>
 
@@ -48,7 +52,8 @@ function App() {
         <Route path="/" exact={true} component={HomeScreen} />
         <Route path='/DownloadApp' component={DownloadApp}></Route>
         <Route path ='/CustomerCode'component ={CustomerCode}/>
-        <Route path ='/LoginGuide' component = {LoginGuide}/>       
+        <Route path ='/LoginGuide' component = {LoginGuide}/> 
+        <Route path ='/MenuGuide' component = {MenuGuide}/>       
         </div>
       </main>
 
