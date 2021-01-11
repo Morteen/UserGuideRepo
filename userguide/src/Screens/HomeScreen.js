@@ -5,7 +5,8 @@ import GooglePlaySearch from '../Images/downlaodApp/GooglePlaySearch.PNG'
 import CustomerCodeScreen from '../Images/downlaodApp/CustomerCode.PNG'
 import CustomerCodeScreenWithCode from "../Images/BrdDahl/CustomerCodeScreenWithCode.PNG";
 import LogOn from '../Images/BrdDahl/LogOn/LogOn.PNG'
-import Menu from '../Images/BrdDahl/Menu/Menu.PNG'
+import Menu from '../Images/BrdDahl/Menu/BDProdfunctionList.PNG'
+
 
 
 function HomeScreen(props) {
@@ -28,7 +29,7 @@ function HomeScreen(props) {
             
 
               <div className="product-name"   onClick={closeMenu}>
-                <Link to='/DownloadApp' ><div> Hvordan laste ned Transfleet Terminal fra Google Play</div>
+                <Link to='/DownloadApp' ><div> Hvordan laste ned TransFleet Terminal fra Google Play</div>
                 <img src={GooglePlaySearch} alt=" Google Play Icon"  className="product-image"/>
                 </Link>
               </div>

@@ -7,6 +7,8 @@ import DownloadApp from './Screens/DownloadApp'
 import CustomerCode from './Screens/CustomerCode'
 import LoginGuide from './Screens/LoginGuide'
 import MenuGuide from './Screens/MenuGuide'
+import RegContainer from './Screens/RegContainer'
+import LoadContainer from './Screens/LoadContainer'
 
 function App() {
 
@@ -27,7 +29,7 @@ function App() {
           <br></br>
           <button onClick={openMenu}>&#9776;</button>
 
-        <Link to='/'>Transfleet Terminal</Link> 
+        <Link to='/'>TransFleet Terminal</Link> 
         </div>
         <div className="header-links"></div>
       </header>
@@ -41,10 +43,17 @@ function App() {
        <li>
        <Link to='/LoginGuide' onClick={closeMenu}>Login guide</Link>
        </li>
-       <li>
-       <Link to='/MenuGuide' onClick={closeMenu}>Meny forklaring</Link>
-       </li>
+      
        </ul>
+       <div> &nbsp; hei </div> 
+       
+       <ul>
+       <li><Link to='/MenuGuide' onClick={closeMenu}>Generelle ting</Link> </li>
+       <div> &nbsp; </div>
+         <li> <Link  onClick={closeMenu}>Oppgaveliste</Link></li> 
+         <li> <Link to='/RegContainer' onClick={closeMenu}>Register container</Link></li>
+         <li> <Link to='/LoadContainer' onClick={closeMenu}>Fremplukk</Link></li>
+         </ul>
       </aside>
 
       <main className="main">
@@ -53,7 +62,9 @@ function App() {
         <Route path='/DownloadApp' component={DownloadApp}></Route>
         <Route path ='/CustomerCode'component ={CustomerCode}/>
         <Route path ='/LoginGuide' component = {LoginGuide}/> 
-        <Route path ='/MenuGuide' component = {MenuGuide}/>       
+        <Route path ='/MenuGuide' component = {MenuGuide}/>  
+        <Route path='/RegContainer'  component={RegContainer}/>   
+        <Route path='/LoadContainer'  component={LoadContainer}/>
         </div>
       </main>
 
@@ -61,7 +72,7 @@ function App() {
 
 
     <footer className="footer">
-        <p>utvikler Morten</p>
+        <p>utviklet av Support</p>
       </footer>
     </BrowserRouter>
   );

@@ -27,11 +27,11 @@ function DownloadApp(props) {
       </li>
     <li className="product" >
      
-      Skriv inn Transfleet i søkefeltet 
+      Skriv inn TransFleet i søkefeltet 
       <img src={GooglePlaySearch} alt=" Google Play Icon"  className="product-image"/>
       </li>
     <li className="product" >
-      Velg Transfleet Terminal
+      Velg TransFleet Terminal
     
       <img src={GooglePlayDownload} alt=" Google Play Icon"  className="product-image"/>
       </li>
@@ -49,7 +49,7 @@ function DownloadApp(props) {
       <img src={AllowAccessOninstall} alt=" Google Play Icon"  className="product-image"/>
       </li>
       <li className="product">
-     Tillat å bruke email adressen, den blir da registert i Transfleet og kan brukes ved support
+     Tillat å bruke email adressen, den blir da registert i TransFleet og kan brukes ved support
       <img src={AllowAccessToGoogleEmail} alt=" Google Play Icon"  className="product-image"/>
       </li>
       <li className="product">

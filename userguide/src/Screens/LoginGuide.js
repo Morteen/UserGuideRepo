@@ -41,9 +41,10 @@ Trykk på «Logg på»-knappen i bunnen av skjermen for å starte med innlogging
   </li>
   <li className="product">
    Pålogget status vises i bildet 
-   <Link to='/'>Trykk på Meny knappen for å åpne funksjons menyen</Link>
+   <Link to='/MenuGuide'>Trykk på Meny knappen for å åpne funksjons menyen
     <div> &nbsp; </div>
   <img src={LoggedOn} alt='Log on'  className="product-image"></img>
+  </Link>
   </li>
    </ul>
     </div>
