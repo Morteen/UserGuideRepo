@@ -92,8 +92,8 @@ a:hover {
 }
 .product {
   display: flex;
-  flex-direction: column;
-  /*justify-content: space-between;*/
+  flex-direction: row;
+  justify-content: space-between;
 
   height: 100%;
 }
@@ -114,10 +114,10 @@ a:hover {
   margin-top: 1rem;
   max-width: 17rem;
   max-height: 34rem;
-  float: left;
 }
 .product-text {
-  float: right;
+  margin-top: 4rem;
+  margin-left: 0.5rem;
 }
 
 .product-rating {
@@ -126,9 +126,24 @@ a:hover {
 
 /*TaskHeading*/
 .taskHeading {
-  margin-left: 42%;
-  margin-bottom: 5rem;
+  font-size: 150%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
+.taskExplanation {
+  /*margin-left: 42%;
+  margin-bottom: 5rem;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
 /* Reviews */
 ul.review {
   list-style-type: none;

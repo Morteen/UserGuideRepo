@@ -22,23 +22,14 @@ function RegContainer(props) {
 
   return (
     <div>
-        <div className='taskHeading'><h3>Register container</h3></div>  
+        <div className='taskHeading'>Register container </div> 
+        <div className='taskExplanation'> Register container benyttes for å registrere container/lastebærer <br></br>
+
+Når en container er laget, den brukes fra andre oppgaver for eksempel Fremplukk <br/>
+I dette eksemplet valgte vi Legg til Container og skrev inn containers navn.</div> 
      <ul className="products">
        
-         <li className="product">
-            Register container benyttes for å registrere container/lastebærer <div></div>
-
-                
-                <div></div> Når en container er laget, den brukes fra andre oppgaver for eksempel Fremplukk 
-                I dette eksemplet valgte vi Legg til Container og skrev inn containers navn.
-
-        </li>
-        <li className="product">
-             Velg Register container fra listen
-             <div> &nbsp; </div><div> &nbsp; </div>
-    
-            <img src={RegContainerSelected} alt='Velg Registrer kontainer'  className="product-image"></img>
-  </li>
+        
  
 <Card 
 image={RegContainerSelected} 

@@ -13,11 +13,13 @@ function Card(props) {
       
        
          <li className="product">
+
+        <img src={props.image} alt={props.imageAlt} className="product-image"></img> 
         
         <div className="product-text">{props.cardInfo}</div>
       
                
-            <img src={props.image} alt={props.imageAlt} className="product-image"></img> 
+         
                
 
         </li>

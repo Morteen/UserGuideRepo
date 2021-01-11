@@ -7,6 +7,7 @@ import Menu from '../Images/BrdDahl/Menu/BDProdfunctionList.PNG'
 import RegContainerOrUseExisting from '../Images/Tasks/Fremplukk/RegContainerOrUseExisting.PNG'
 import GetTripFromColli from '../Images/Tasks/Fremplukk/GetTripFromColli.PNG'
 import ConfirmTripFremplukk from '../Images/Tasks/Fremplukk/ConfirmTripFremplukk.PNG'
+import Refernces from '../Images/Tasks/Fremplukk/Refernces.PNG';
 
 
 function LoadContainer(props) {
@@ -24,8 +25,8 @@ function LoadContainer(props) {
 
 <Card 
 image={Menu} 
-ImageAlt=' Velg "Fremplukk" i listen' 
-cardInfo='  Velg "Fremplukk" i listen'
+ImageAlt='Velg "Fremplukk" i listen' 
+cardInfo='Velg "Fremplukk" i listen'
 />
 
    
@@ -45,6 +46,11 @@ image={ConfirmTripFremplukk}
 ImageAlt='Hvis ruten som vises er den som skal lastes, trykker brukeren Ja knappen, og blir sendt til neste bilde.' 
 cardInfo='Hvis ruten som vises er den som skal lastes, trykker brukeren Ja knappen, og blir sendt til neste bilde.'
 />  
+<Card 
+image={ Refernces} 
+ImageAlt='Herfra kan skanningen fortsette fortløpende til man er ferdig.' 
+cardInfo='Herfra kan skanningen fortsette fortløpende til man er ferdig.'
+/>
 
  
  

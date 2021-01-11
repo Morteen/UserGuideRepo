@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-
+import Card from './Commonfeatures/Card'
 import LoggedOn from '../Images/BrdDahl/LogOn/LoggedOn.PNG'
 import Menu from '../Images/BrdDahl/Menu/BDProdfunctionList.PNG'
 
@@ -17,19 +17,20 @@ function MenuGuide(props) {
     <div>
         <div className='taskHeading'><h3>Oppgavemeny oversikt</h3></div>  
      <ul className="products">
+         <Card
+         image={LoggedOn} 
+         ImageAlt='Pålogget status vises i bildet ' 
+         cardInfo='Pålogget status vises i bildet Trykk på Meny knappen for å åpne funksjons menyen '
+         />
+
+<Card
+         image={Menu} 
+         ImageAlt='Velg ønsket oppgave fra listen' 
+         cardInfo='Velg ønsket oppgave fra listen'
+         />
        
-  <li className="product">
-   Pålogget status vises i bildet 
-   <Link to='/'>Trykk på Meny knappen for å åpne funksjons menyen</Link>
-    <div> &nbsp; </div>
-  <img src={LoggedOn} alt='Log on'  className="product-image"></img>
-  </li>
-  <li className="product">
-  Velg ønsket oppgave fra listen
-  <div> &nbsp; </div><div> &nbsp; </div>
-    <div> &nbsp; </div>
-  <img src={Menu} alt='Log on'  className="product-image"></img>
-  </li>
+ 
+  
    </ul>
     </div>
   );
