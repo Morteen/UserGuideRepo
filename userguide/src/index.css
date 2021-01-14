@@ -97,6 +97,13 @@ a:hover {
 
   height: 100%;
 }
+.product-medium {
+  display: flex;
+  flex-direction: col;
+  justify-content: space-between;
+
+  height: 100%;
+}
 
 .product-name {
   font-size: 2rem;
@@ -115,9 +122,25 @@ a:hover {
   max-width: 17rem;
   max-height: 34rem;
 }
+
+.small-product-image {
+  margin-top: 1rem;
+  max-width: 10rem;
+  max-height: 10rem;
+}
+.medium-product-image {
+  margin-top: 0.5rem;
+  max-width: 12rem;
+  max-height: 12rem;
+}
 .product-text {
   margin-top: 4rem;
   margin-left: 0.5rem;
+}
+.medium-product-text {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
 }
 
 .product-rating {

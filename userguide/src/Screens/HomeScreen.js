@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GooglePlaySearch from '../Images/downlaodApp/GooglePlaySearch.PNG'
 import CustomerCodeScreen from '../Images/downlaodApp/CustomerCode.PNG'
-import CustomerCodeScreenWithCode from "../Images/BrdDahl/CustomerCodeScreenWithCode.PNG";
+
 import LogOn from '../Images/BrdDahl/LogOn/LogOn.PNG'
 import Menu from '../Images/BrdDahl/Menu/BDProdfunctionList.PNG'
 
