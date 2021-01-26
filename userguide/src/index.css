@@ -166,6 +166,9 @@ a:hover {
   flex-wrap: wrap;
   margin-top: 1rem;
 }
+.alertText {
+  color: red;
+}
 
 /* Reviews */
 ul.review {
@@ -211,6 +214,20 @@ a > .rating > span:last-child {
 .sidebar h3 {
   padding-left: 2rem;
   color: #ffffff;
+}
+.sidebar h4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #ffffff;
+}
+.sidebar ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #ffffff;
+}
+.sidebar ul li {
+  margin-top: 0.5rem;
 }
 .sidebar {
   position: fixed;

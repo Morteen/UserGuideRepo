@@ -25,7 +25,7 @@ function RegContainer(props) {
         <div className='taskHeading'>Register container </div> 
         <div className='taskExplanation'> Register container benyttes for å registrere container/lastebærer <br></br>
 
-Når en container er laget, den brukes fra andre oppgaver for eksempel Fremplukk <br/>
+Når en container er laget, kan den brukes i andre oppgaver foreksempel Fremplukk <br/>
 I dette eksemplet valgte vi Legg til Container og skrev inn containers navn.</div> 
      <ul className="products">
        

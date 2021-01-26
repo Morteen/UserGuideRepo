@@ -9,6 +9,8 @@ import LoginGuide from './Screens/LoginGuide'
 import MenuGuide from './Screens/MenuGuide'
 import RegContainer from './Screens/RegContainer'
 import LoadContainer from './Screens/LoadContainer'
+import Reception from './Screens/Reception'
+import LogOutGuide from './Screens/LogOutGuide'
 
 function App() {
 
@@ -33,7 +35,10 @@ function App() {
         </div>
         <div className="header-links"></div>
       </header>
+
+
       <aside className="sidebar">
+      <h4>Kom igang</h4>
         <ul>
           <li>
        <Link to='/DownloadApp' onClick={closeMenu}> Last ned appen</Link>
@@ -42,19 +47,24 @@ function App() {
        </li>
        <li>
        <Link to='/LoginGuide' onClick={closeMenu}>Login guide</Link>
+       
+       </li>
+       <li>
+       <Link to='/LogOutGuide' onClick={closeMenu}>Logout guide</Link>
        </li>
       
        </ul>
-       <div> &nbsp; hei </div> 
+       <div> &nbsp; </div> 
        
+       <h4>Funksjons forklaringer</h4>
        <ul>
-       <li><Link to='/MenuGuide' onClick={closeMenu}>Generelle ting</Link> </li>
-       <div> &nbsp; </div>
-         <li> <Link  onClick={closeMenu}>Oppgaveliste</Link></li> 
-         <li> <Link to='/RegContainer' onClick={closeMenu}>Register container</Link></li>
+        <li> <Link to='/RegContainer' onClick={closeMenu}>Register container</Link></li>
          <li> <Link to='/LoadContainer' onClick={closeMenu}>Fremplukk</Link></li>
+         <li> <Link to='/Reception' onClick={closeMenu}>Mottak</Link></li>
          </ul>
       </aside>
+
+
 
       <main className="main">
         <div className="content">
@@ -65,6 +75,8 @@ function App() {
         <Route path ='/MenuGuide' component = {MenuGuide}/>  
         <Route path='/RegContainer'  component={RegContainer}/>   
         <Route path='/LoadContainer'  component={LoadContainer}/>
+        <Route path='/Reception' component={Reception}/>
+        <Route path='/LogOutGuide' component ={LogOutGuide}/>
         </div>
       </main>
 

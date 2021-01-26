@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GooglePlaySearch from '../Images/downlaodApp/GooglePlaySearch.PNG'
 import CustomerCodeScreen from '../Images/downlaodApp/CustomerCode.PNG'
-
+import Mottak from '../Images/Tasks/Recive/Mottak.PNG'
 import LogOn from '../Images/BrdDahl/LogOn/LogOn.PNG'
 import Menu from '../Images/BrdDahl/Menu/BDProdfunctionList.PNG'
 
@@ -66,6 +66,18 @@ function HomeScreen(props) {
                 <Link to='/MenuGuide' ><div>Meny </div>
                 <div> &nbsp; </div>
                 <img src={Menu} alt=" Google Play Icon"  className="product-image"/>
+                </Link>
+         
+             
+              
+              </div>
+
+            </li>
+            <li>
+            <div className="product-name"    onClick={closeMenu}>
+                <Link to='/Reception' ><div>Mottak</div>
+                <div> &nbsp; </div>
+                <img src={Mottak } alt="Mottak"  className="product-image"/>
                 </Link>
          
              
